@@ -7,7 +7,7 @@ To install this repo onto your own machine use the instructions below. Make sure
 Although I will be responsible for most of the frontend functionality, it's good to know how this stuff works so definitely try to get the frontend running on your machines.
 
 INSTALLATION INSTRUCTIONS FOR FRONTEND:
-1. Clone this repo from github to your computer
+1. Clone this repo from github to your computer (using git clone command with git bash on windows or terminal on mac)
 3. To work on front end open up the folder in VSCode and navigate to the client folder
 4. From here you can use the command 'npm install' in your terminal and it will download all of the dependencies needed for the project
 5. once that is done you can run the site on localhost, to do so enter 'npm start' in your terminal (make sure you are in the right folder)
