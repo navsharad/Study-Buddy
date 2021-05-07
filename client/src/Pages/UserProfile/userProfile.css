@@ -11,7 +11,7 @@
 /* background styling */
 .main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #D8B5FF, #1EAE98);
+    background: linear-gradient(to right top, #cbb0e9, #4c5270);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,9 +36,9 @@
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    background: linear-gradient(to right bottom, rgba(218, 215, 215, 0.5), rgba(238, 237, 237, 0.2));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(238, 237, 237, 0.2));
     overflow: hidden;
-    border-radius: 2rem;
+    
 }
 
 .user {
