@@ -20,8 +20,10 @@
     display: flex;
     min-height: 80vh;
     width: 60%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(206, 203, 203, 0.3));
-    border-radius: 2rem;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(206, 203, 203, 0.3));
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 6px 0px 15px 2px rgba(0,0,0,0.23); 
+    box-shadow: 6px 0px 15px 2px rgba(0,0,0,0.23);
 }
 
 /* left sidebar styling */
@@ -32,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    background: linear-gradient(to right bottom, rgba(218, 215, 215, 0.7), rgba(238, 237, 237, 0.3));
+    background: linear-gradient(to right bottom, rgba(218, 215, 215, 0.5), rgba(238, 237, 237, 0.2));
     overflow: hidden;
     border-radius: 2rem;
 }
@@ -43,7 +45,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 30%;
-    color: #1EAE98;
+    color: #17685c;
 }
 
 /* add spacing between user's picture, name, and status */

@@ -4,15 +4,18 @@ import profilePic from '../../assets/ken.jpg';
 import moneyface from '../../assets/moneyface.png';
 import Overview from '../../tabs/Overview';
 import MyClasses from '../../tabs/MyClasses';
+import Deadlines from '../../tabs/Deadlines';
+import MyProfile from '../../tabs/MyProfile';
 
-const UserProfile = () => {
+const UserProfile = ({logOut}) => {
     const [currentTab, setCurrentTab] = useState(0);
 
+    // responsible for changing the tabs once user clicks a differnt tab
     const changeTab = () => {
         if (currentTab == 0) return <Overview />;
         if (currentTab == 1) return <MyClasses />;
-        if (currentTab == 2) return <Overview />;
-        if (currentTab == 3) return <Overview />;
+        if (currentTab == 2) return <Deadlines />;
+        if (currentTab == 3) return <MyProfile />;
     }
 
     return (
@@ -33,7 +36,7 @@ const UserProfile = () => {
                                 <li onClick={() => setCurrentTab(3)}><a href="#">My profile</a></li>
                             </ul>
                         </div>
-                        <div className="signoff-btn">
+                        <div className="signoff-btn" onClick={logOut}>
                             <p>Sign Out</p>
                         </div>
                     </div>
