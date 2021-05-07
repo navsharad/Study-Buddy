@@ -11,7 +11,7 @@
 /* background styling */
 .main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #fac0c0, #4c5270);
+    background: linear-gradient(to right top, #d3ceee, #4253a5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@
     display: flex;
     min-height: 80vh;
     width: 60%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(206, 203, 203, 0.3));
+    background: linear-gradient(to right bottom, rgb(243, 222, 222), rgb(255, 124, 124));
     border-radius: 1.5rem;
     -webkit-box-shadow: 14px 14px 12px 2px rgba(0, 0, 0, 0.315);
     box-shadow: 14px 14px 12px 2px rgba(0,0,0,0.315);
@@ -37,7 +37,7 @@
     justify-content: space-around;
     align-items: center;
     width: 25%;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(238, 237, 237, 0.2));
+    background: rgb(253, 242, 228);
     overflow: hidden;
     border-radius: 1.5rem;
     border-top-right-radius: 0rem;
@@ -50,7 +50,8 @@
     justify-content: space-evenly;
     align-items: center;
     height: 30%;
-    color: #17685c;
+    color: #3b3b3b;
+    font-style: italic;
 }
 
 /* add spacing between user's picture, name, and status */
@@ -83,12 +84,13 @@
     font-size: 1.2rem;
     font-weight: bold;
     /* gradient color for text */
-    color: #1EAE98;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.09rem;
     transition: ease-in-out 0.2s;
 }
 
 .links ul li a:hover {
-    color: rgb(20, 88, 81);
+    color: rgb(115, 214, 138);
 }
 
 /* promo button styles */

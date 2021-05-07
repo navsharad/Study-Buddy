@@ -26,7 +26,6 @@ const UserProfile = ({logOut}) => {
                         <div className="user">
                             <img src={profilePic} alt=""/>
                             <h3>Ken Ho</h3>
-                            <p>Student</p>
                         </div>
                         <div className="links">
                             <ul>

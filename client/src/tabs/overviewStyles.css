@@ -19,6 +19,8 @@
 
 .overview-title {
     font-size: 3rem;
+    letter-spacing: 0.35rem;
+    text-shadow: black;
     color: rgb(58, 58, 93);
 }
 
