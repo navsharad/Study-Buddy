@@ -7,7 +7,7 @@
 
 
 /* background styling */
-main {
+.main {
     min-height: 100vh;
     background: linear-gradient(to right top, #D8B5FF, #1EAE98);
     display: flex;
@@ -17,9 +17,10 @@ main {
 
 .glass {
     background: white;
+    display: flex;
     min-height: 80vh;
     width: 60%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(206, 203, 203, 0.3));
     border-radius: 2rem;
 }
 
@@ -30,8 +31,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 22%;
-    background: linear-gradient(to right bottom, rgba(202, 201, 201, 0.7), rgba(255, 255, 255, 0.3));
+    width: 25%;
+    background: linear-gradient(to right bottom, rgba(218, 215, 215, 0.7), rgba(238, 237, 237, 0.3));
     overflow: hidden;
     border-radius: 2rem;
 }
@@ -76,25 +77,40 @@ main {
     font-weight: bold;
     /* gradient color for text */
     color: #1EAE98;
-
+    transition: ease-in-out 0.2s;
 }
 
+.links ul li a:hover {
+    color: rgb(20, 88, 81);
+}
 
-.promo {
-    background:  #a986d1;
-    width: 200px;
-    height: 100px;
-    border-radius: 20px;
+/* promo button styles */
+.signoff-btn {
+    background:  #e24646;
+    width: 175px;
+    height: 75px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
-.promo img {
-    height: 50px;
-    transform: rotate(20deg);
+
+.signoff-btn:hover {
+    background: rgb(230, 116, 116);
+}
+
+/* current tab styles */
+
+.tab-container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

@@ -6,8 +6,8 @@
 }
 
 .home-container {
+    background: linear-gradient(to right top, #D8B5FF, #1EAE98);
     height: 100vh;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .home-body {

@@ -1,0 +1,19 @@
+.todo-container {
+    width: 300px;
+    height: 50px;
+    border-bottom: 0.2px grey solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.todo-container h3{
+    color: dodgerblue;
+}
+
+.todo-container h5 {
+    color: darkslategray;
+}
