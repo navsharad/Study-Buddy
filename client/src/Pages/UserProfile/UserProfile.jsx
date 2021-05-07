@@ -44,8 +44,7 @@ const UserProfile = ({logOut}) => {
                     <div className="tab-container">
                     {changeTab()}
                     </div>
-                </section>
-                
+                </section>  
             </main>
         </div>
     )
