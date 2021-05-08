@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './homeStyles.css';
 import logo from '../../assets/logo.png';
+import Login from '../../components/LogIn/LoginModal';
+import LoginModal from '../../components/LogIn/LoginModal';
 
 const Home = () => {
+    const [displayLoginModal, setdisplayLoginModal] = useState(false);
+
+    const toggleLoginModal = () => {
+        setdisplayLoginModal(!displayLoginModal);
+    }
+
     return (
         <main className="home-container">
             <div className="home-body">
@@ -15,10 +23,11 @@ const Home = () => {
                     <input type="text" name="" id="" placeholder="Username"/>
                     <input type="text" name="" id="" placeholder="Password"/>
                     <button className="sign-up-button home-button">Sign Up</button>
-                    <button className="log-in-button home-button">Already Registered? Sign In</button>
+                    <button className="log-in-button home-button" onClick={toggleLoginModal}>Already Registered? Sign In</button>
                 </form>
                 </div>
             </div>
+            {displayLoginModal && <LoginModal />}
         </main>
     )
 }

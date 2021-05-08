@@ -3,7 +3,7 @@ import './overviewStyles.css';
 import ClassComponent from '../components/Class/ClassComponent';
 import Todo from '../components/Todo/Todo';
 
-const Overview = () => {
+const Overview = ({userClasses}) => {
     return (
         <main className="overview-container">
             <h1 className="overview-title">
@@ -12,9 +12,7 @@ const Overview = () => {
             <section className="overview-content">
                 <div className="classes-overview">
                     <h1>Classes</h1>
-                    <ClassComponent {...{className:'Biology', instructorName:'Dr James'}}/>
-                    <ClassComponent {...{className:'Algebra', instructorName:'Dr Goddy'}}/>
-                    <ClassComponent {...{className:'Gender Studies', instructorName:'Mr Smokerino'}}/>
+                    {userClasses.map((userClass, index) => <ClassComponent key={index} userClass={userClass}/>)}
                 </div>
                 <div className="todo-overview">
                     <h1>To-do List</h1>

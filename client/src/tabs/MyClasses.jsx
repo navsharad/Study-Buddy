@@ -1,20 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './myClassesStyles.css';
 import ClassComponent from '../components/Class/ClassComponent';
+import AddClassModal from '../components/Class/AddClassModal';
 
-const MyClasses = () => {
+const MyClasses = ({userClasses, addNewClass}) => {
+    const [addClassModal, setaddClassModal] = useState(false);
+
+    const toggleModal = () => {
+        setaddClassModal(!addClassModal);
+    }
+
     return (
         <main className="myClasses-container">
             <h1 className="myClasses-title">
                 My Classes
             </h1>
-            <section className="myClasses-content">
-                <div className="classes-overview">
-                    <ClassComponent {...{className:'Biology', instructorName:'Dr James'}}/>
-                    <ClassComponent {...{className:'Algebra', instructorName:'Dr Goddy'}}/>
-                    <ClassComponent {...{className:'Gender Studies', instructorName:'Mr Smokerino'}}/>
+                <div className="class-list">
+                    {userClasses.map((userClass, index) => <ClassComponent key={index} userClass={userClass}/>)}
                 </div>
-            </section>
+                <button className="add-class-btn" onClick={toggleModal}>Add New Class</button>
+                {addClassModal && <AddClassModal addNewClass={addNewClass} toggleModal={toggleModal}/>}
         </main>
     )
 }
