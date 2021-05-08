@@ -7,13 +7,13 @@ import MyClasses from '../../tabs/MyClasses';
 import Deadlines from '../../tabs/Deadlines';
 import MyProfile from '../../tabs/MyProfile';
 
-const UserProfile = ({logOut}) => {
+const UserProfile = ({logOut, userClasses, addNewClass}) => {
     const [currentTab, setCurrentTab] = useState(0);
 
     // responsible for changing the tabs once user clicks a differnt tab
     const changeTab = () => {
-        if (currentTab == 0) return <Overview />;
-        if (currentTab == 1) return <MyClasses />;
+        if (currentTab == 0) return <Overview userClasses={userClasses} />;
+        if (currentTab == 1) return <MyClasses userClasses={userClasses} addNewClass={addNewClass}/>;
         if (currentTab == 2) return <Deadlines />;
         if (currentTab == 3) return <MyProfile />;
     }

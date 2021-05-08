@@ -1,13 +1,16 @@
 .todo-container {
     width: 300px;
-    height: 50px;
-    border-bottom: 0.2px grey solid;
+    min-height: 50px;
+    background: linear-gradient(to right bottom, rgba(235, 235, 235, 0.5), rgba(255, 254, 254, 0.2));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 0.3rem;
+    -webkit-box-shadow: 6px 0px 15px 2px rgba(0,0,0,0.23); 
+    box-shadow: 6px 0px 15px 2px rgba(0,0,0,0.23);
 }
 
 .todo-container h3{
