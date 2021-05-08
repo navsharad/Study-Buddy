@@ -3,15 +3,12 @@ package com.example.server.Task;
 import java.util.Date;
 
 public class Task {
-    //======================================================================================
-    // ************************************ MODEL CLASS ************************************
-    //======================================================================================
-    private String taskTitle;
-    private String taskDescription;
-    private String taskType;
-    private Boolean isComplete;
-    private Boolean isImportant;
-    private Boolean isPassed;
+    private String title;
+    private String description;
+    private String type;
+    private boolean isComplete;
+    private boolean isImportant;
+    private boolean isPassed;
     private Date dueDate;
 
     public Task getTasks() {
@@ -19,10 +16,10 @@ public class Task {
         return this;
     }
 
-    public Task(String taskTitle, String taskDescription, String taskType, Boolean isComplete, Boolean isImportant, Boolean isPassed, Date dueDate) {
-        this.taskTitle = taskTitle;
-        this.taskDescription = taskDescription;
-        this.taskType = taskType;
+    public Task(String taskTitle, String taskDescription, String taskType, boolean isComplete, boolean isImportant, boolean isPassed, Date dueDate) {
+        this.title = taskTitle;
+        this.description = taskDescription;
+        this.type = taskType;
         this.isComplete = isComplete;
         this.isImportant = isImportant;
         this.isPassed = isPassed;

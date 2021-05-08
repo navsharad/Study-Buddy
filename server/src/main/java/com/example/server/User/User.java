@@ -14,7 +14,6 @@ public class User {
     private boolean emailNotifications;
 
     public User() {
-
     }
 
     public User(int id, String name, String email, String password, boolean emailNotifications) {
@@ -64,12 +63,12 @@ public class User {
         this.password = password;
     }
 
-    public boolean isEmailNotifications() {
+    public boolean hasEmailNotifications() {
         return emailNotifications;
     }
 
-    public void setEmailNotifications(boolean emailNotifications) {
-        this.emailNotifications = emailNotifications;
+    public void setEmailNotifications(boolean decision) {
+        this.emailNotifications = decision;
     }
 
     @Override

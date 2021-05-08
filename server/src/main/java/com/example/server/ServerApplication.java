@@ -1,6 +1,5 @@
 package com.example.server;
 
-import com.example.server.Student.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,6 +18,10 @@ public class ServerApplication {
 		SpringApplication.run(ServerApplication.class, args);
 	}
 
+	@GetMapping
+	public String hello() {
+		return "Hello";
+	}
 
 
 }
