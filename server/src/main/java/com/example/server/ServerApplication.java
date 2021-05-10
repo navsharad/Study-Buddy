@@ -18,9 +18,9 @@ public class ServerApplication {
 		SpringApplication.run(ServerApplication.class, args);
 	}
 
-	@GetMapping
+	@GetMapping("/")
 	public String hello() {
-		return "Hello";
+		return "Yay. This landing page is working!";
 	}
 
 
