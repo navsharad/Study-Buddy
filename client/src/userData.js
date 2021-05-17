@@ -1,4 +1,5 @@
 export const users = {
         "name": "Ken Ho",
-        "profilePic": "https://data.whicdn.com/images/322027365/original.jpg?t=1541703413"
+        "email": "kenho420@hotmail.com",
+        "profilePic": "https://avatars.githubusercontent.com/u/46903916?v=4"
     }

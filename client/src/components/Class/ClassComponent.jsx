@@ -7,10 +7,10 @@ const ClassComponent = ({userClass, removeClass}) => {
     return (
         <div className="class-wrapper">
             <div className="class-container">
-                <h3>{userClass.className}</h3>
+                <h3>{userClass.courseName}</h3>
                 <h5>{userClass.instructorName}</h5>
             </div>
-            <img src={removeButton} alt="" onClick={() => removeClass(userClass.className)}/>
+            <img src={removeButton} alt="" onClick={() => removeClass(userClass.courseName)}/>
         </div>
     )
 }

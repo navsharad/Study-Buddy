@@ -27,6 +27,7 @@
 .sign-up-form {
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
 }
  
 
@@ -69,14 +70,16 @@ input[type="text"] {
     border: none;
     color: white;
     margin-bottom: 5px;
+    width: 100%;
 }
 
 .log-in-button {
     border: 2px solid dodgerblue;
     background-color: transparent;
     color: dodgerblue;
+    width: 100%;
 }
 
 .home-logo {
-    transform: scale(2);
+    transform: scale(1);
 }

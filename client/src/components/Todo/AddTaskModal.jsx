@@ -20,7 +20,7 @@ const AddTaskModal = ({addNewTask, toggleModal}) => {
             </article>
             <article>
             <label htmlFor="dueDate">Due Date: </label>
-            Due Date: <input type="date" value={dueDate} onChange={(e) => setDueDate(e.target.value)}/>
+            <input type="text" value={dueDate} onChange={(e) => setDueDate(e.target.value)}/>
             </article>
             <button className="add-class-btn" onClick={() => {addNewTask(taskName, className, dueDate); toggleModal()}}>Add Task</button>
         </div>

@@ -24,13 +24,13 @@ const UserProfile = ({logOut, userClasses, addNewClass, tasks, addNewTask, remov
                         <div className="user">
                             <img src={userInfo.profilePic} alt=""/>
                             <h3>{userInfo.name}</h3>
-                            <p>PogChamp</p>
+                            <p>Student</p>
                         </div>
                         <div className="links">
                             <ul>
                                 <li onClick={() => setCurrentTab(0)}><a href="#">Overview</a></li>
                                 <li onClick={() => setCurrentTab(1)}><a href="#">My Classes</a></li>
-                                <li onClick={() => setCurrentTab(2)}><a href="#">Upcoming Deadlines</a></li>
+                                <li onClick={() => setCurrentTab(2)}><a href="#">Find Classmates!</a></li>
                                 <li onClick={() => setCurrentTab(3)}><a href="#">My profile</a></li>
                             </ul>
                         </div>

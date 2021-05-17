@@ -7,7 +7,7 @@ const MyProfile = ({userInfo}) => {
             <img src={userInfo.profilePic} alt="" />
             <button className="edit-profile-btn">Edit Profile</button>
             <h2>{userInfo.name}</h2>
-            <h4>PogChamp</h4>
+            <h4>KEN HO LETS GO</h4>
         </div>
     )
 }
