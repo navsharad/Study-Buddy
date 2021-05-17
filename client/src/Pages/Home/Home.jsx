@@ -26,7 +26,7 @@ const Home = ({createUser, logIn}) => {
                     <input type="text" name="" id="" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required/>
                     <input type="text" name="" id="" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
                     <input type="text" name="" id="" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
-                    <input type="text" name="" id="" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
+                    <input type="password" name="" id="" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required/>
                     <button className="sign-up-button home-button" onClick={() => createUser(firstName, lastName, email, password)}>Sign Up</button>
                     <button className="log-in-button home-button" onClick={toggleLoginModal}>Already Registered? Sign In</button>
                 </form>
