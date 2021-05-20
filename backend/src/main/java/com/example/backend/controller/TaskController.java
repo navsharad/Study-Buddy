@@ -22,17 +22,30 @@ public class TaskController {
     @Autowired
     private TaskRepository taskRepository;
 
-    // get all tasks
+    /**
+     * Retrieve a list of all user's tasks
+     * @return a list of all user's tasks
+     */
     @GetMapping("/tasks")
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
     }
 
+    /**
+     * Create a task object on the frontend
+     * @param task task associated with user
+     * @return task displayed on the frontend
+     */
     @PostMapping("/tasks")
     public Task createTask(@RequestBody Task task) {
         return taskRepository.save(task);
     }
 
+    /**
+     * Delete a task object from the frontend
+     * @param id identification number for task
+     * @return a response indicating the task object has been deleted
+     */
     @DeleteMapping("/tasks/{id}")
     public ResponseEntity<Map<String, Boolean>> deleteTask(@PathVariable Integer id) {
         Task task = taskRepository.findById(id)

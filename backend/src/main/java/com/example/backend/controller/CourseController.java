@@ -20,19 +20,31 @@ public class CourseController {
     @Autowired
     private CourseRepository courseRepository;
 
-    // get all classes
+    /**
+     * Retrieve a list of all courses the user is taking
+     * @return a list of all courses the user is taking
+     */
     @GetMapping("/courses")
     public List<Course> getAllCourses() {
         return courseRepository.findAll();
     }
 
-    // create class
+    /**
+     * Create a course object on the frontend
+     * @param course course associated with user's task(s)
+     * @return course displayed on the frontend
+     */
     @PostMapping("/courses")
     public Course createCourse( @RequestBody Course course) {
         return courseRepository.save(course);
     }
 
 
+    /**
+     * Delete a course object from the frontend
+     * @param id identification number for course
+     * @return a response indicating the course object has been deleted
+     */
     @DeleteMapping("/courses/{id}")
     public ResponseEntity <Map<String, Boolean>> deleteCourse(@PathVariable Integer id) {
         Course course = courseRepository.findById(id)
